@@ -1,0 +1,30 @@
+{
+  "name": "@risadams/klog",
+  "version": "1.0.0",
+  "description": "Utilities for formatting browser console messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risadams/klog.git"
+  },
+  "keywords": [
+    "console",
+    "utility"
+  ],
+  "author": "Ris Adams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/risadams/klog/issues"
+  },
+  "homepage": "https://github.com/risadams/klog#readme",
+  "devDependencies": {
+    "@babel/core": "7.11.1",
+    "@babel/cli": "7.10.5",
+    "@babel/preset-env": "7.11.0",
+    "jshint": "^2.12.0"
+  }
+}
