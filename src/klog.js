@@ -4,7 +4,7 @@
  * License: MIT
  */
 
-const klog = {
+export const klog = {
   default: { bg: "", fg: "" },
   success: { bg: "", fg: "#99CC99" },
   debug: { bg: "", fg: "", size: "11px" },
@@ -89,7 +89,7 @@ const klog = {
     "Overly Manly Man": "http://i.imgur.com/dOSn9Na.jpg",
     "Paranoid Parrot": "http://i.imgur.com/KooYHdg.jpg",
     "Pepperidge Farm Remembers": "http://i.imgur.com/uFde4v5.jpg",
-    Philosoraptor: "http://i.imgur.com/eERhI5h.jpg",
+    "Philosoraptor": "http://i.imgur.com/eERhI5h.jpg",
     "Priority Peter": "http://i.imgur.com/BBEFk0e.jpg",
     "Rasta Science Teacher": "http://i.imgur.com/Js6Ai5T.jpg",
     "Redditor's Wife": "http://i.imgur.com/d1XfJeD.jpg",

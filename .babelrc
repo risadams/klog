@@ -1,4 +1,15 @@
 // .babelrc
 {
-  "presets": ["@babel/preset-env", "minify"]
+  "presets": ["@babel/preset-env", "minify"],
+  "plugins": [
+    [
+      "@babel/plugin-transform-modules-amd",
+      {
+        "allowTopLevelThis": true,
+        "strict": true,
+        "noInterop": true,
+        "loose": true
+      }
+    ]
+  ]
 }

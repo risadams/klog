@@ -1,35 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <title>Console Testing</title>
+  </head>
 
-<head>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-  <meta content="utf-8" http-equiv="encoding">
-  <title>Console Testing</title>
-</head>
+  <body>
+    <p>Console Testing</p>
+    <script src="../node_modules/requirejs/require.js"></script>
+    <!-- <script src="../build/klog.js"></script> -->
+    <script>
+      requirejs.config({
+        paths: {
+          klog: "../build/klog",
+        },
+      });
 
-<body>
+      require(["klog"], function (klog) {
+        var klog = klog.klog;
 
-  <p>Console Testing</p>
-  <script src="../build/klog.js"></script>
-<script>
-klog.write('normal log');
-klog.writeSuccess('success');
+        klog.write("normal log");
+        klog.writeSuccess("success");
 
-klog.writeInfo('info');
-klog.writeWarning('warning');
-klog.writeError('error');
-klog.writeBigError('big error');
-klog.writeDebug('debug');
-klog.writeCustom('custom',{
-    bg: "#c0c0c0c",
-    fg: '#bada55',
-    size: '32px'
-});
+        klog.writeInfo("info");
+        klog.writeWarning("warning");
+        klog.writeError("error");
+        klog.writeBigError("big error");
+        klog.writeDebug("debug");
+        klog.writeCustom("custom", {
+          bg: "#c0c0c0c",
+          fg: "#bada55",
+          size: "32px",
+        });
 
-klog.meme("Not sure if memes in dev tools is stupid", "or disastrous.", "Not Sure Fry", 400, 300);
-</script>
-  
-  
-</body>
-
+        klog.meme(
+          "Not sure if memes in dev tools is stupid",
+          "or disastrous.",
+          "Not Sure Fry",
+          400,
+          300
+        );
+      });
+    </script>
+  </body>
 </html>
