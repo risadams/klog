@@ -39,6 +39,9 @@ RUN mkdir -p ${NPM_GLOBAL} \
 # Install eslint globally
 RUN sudo -u ${USERNAME} npm install -g eslint
 
+#update npm
+RUN sudo -u ${USERNAME} npm install -g npm
+
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
