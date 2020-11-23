@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/risadams/klog#readme",
   "devDependencies": {
-    "@babel/core": "7.12.3",
+    "@babel/core": "7.12.7",
     "@babel/cli": "7.12.1",
     "@babel/preset-env": "7.12.1",
     "@babel/plugin-transform-modules-amd": "7.12.1",
