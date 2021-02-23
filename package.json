@@ -24,7 +24,7 @@
   "devDependencies": {
     "@babel/core": "7.12.17",
     "@babel/cli": "7.12.13",
-    "@babel/preset-env": "7.12.17",
+    "@babel/preset-env": "7.13.0",
     "@babel/plugin-transform-modules-amd": "7.12.13",
     "babel-preset-minify": "0.5.1",
     "jshint": "^2.12.0",
