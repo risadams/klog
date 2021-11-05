@@ -222,8 +222,6 @@ export const klog = {
       canvas.width = width;
       canvas.height = height;
 
-      var text = upper.toUpperCase();
-
       ctx.scale(width / 500, height / 500);
 
       //Draw the background
